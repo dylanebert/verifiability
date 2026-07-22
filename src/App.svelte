@@ -1,6 +1,6 @@
 <article class="page">
   <header class="head">
-    <h1 class="title">Verifiability — The New Crux of Building</h1>
+    <h1 class="title">Verifiability</h1>
   </header>
 
   <section class="section">
