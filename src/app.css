@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Outfit:wght@500;600&display=swap');
+
+:root {
+  color-scheme: light;
+
+  --bg: #ffffff;
+  --ink: #1a1a1a;
+  --text-dim: #3a3a3a;
+  --text-muted: #6b6b6b;
+  --border: #cbcbcb;
+
+  --serif: 'Newsreader', Georgia, serif;
+  --display: 'Outfit', system-ui, sans-serif;
+
+  --measure: 760px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text-dim);
+  font-family: var(--serif);
+  font-size: 18px;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--border);
+  transition: text-decoration-color 0.15s;
+}
+
+a:hover {
+  text-decoration-color: var(--ink);
+}
+
+strong {
+  font-weight: 600;
+  color: var(--ink);
+}
