@@ -63,8 +63,6 @@
       of the three, judging what no test can express. Also the most expensive,
       non-deterministic, and
       <a href="https://arxiv.org/abs/2507.08794" target="_blank" rel="noopener noreferrer">foolable in ways still being mapped</a>.
-      It's the largest and fastest-moving type, spanning adversarial review,
-      consensus, and graders. A field of its own; I'll point rather than cover.
     </p>
   </section>
 
