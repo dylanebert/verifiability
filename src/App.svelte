@@ -56,6 +56,48 @@
       can trust it to do.
     </p>
   </section>
+
+  <section class="section">
+    <h2>the forms</h2>
+    <p>
+      So the question is how you verify. Three forms; Anthropic
+      <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents" target="_blank" rel="noopener noreferrer">sorts graders</a>
+      the same way: code-based, model-based, human.
+    </p>
+    <p>
+      <strong>Human.</strong> The highest ceiling. A person can judge anything,
+      taste included. Also the slowest and most expensive. It's the rung
+      everything else exists to avoid.
+    </p>
+    <p>
+      <strong>Machine.</strong> Tests, types, proofs. Fast and near-perfect, but
+      only as correct as the assumptions you fed it. When the machine oracle is
+      real, it unlocks a lot. Bun's
+      <a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener noreferrer">rewrite from Zig to Rust</a>
+      rode a language-independent test suite: 60,624 tests, "0 skipped or
+      deleted." One author, reviewers who saw only the diff and were told to
+      assume it was broken, and a hand check that the tests actually ran.
+    </p>
+    <p>
+      <strong>LLM-as-judge.</strong> An agent grades the work. Cheap, general,
+      the fastest-moving of the three. Also foolable: a single junk token can
+      trigger a false pass
+      (<a href="https://arxiv.org/abs/2507.08794" target="_blank" rel="noopener noreferrer">One Token to Fool</a>).
+      And more judges isn't automatically a better verdict. Anthropic found
+      <a href="https://www.anthropic.com/engineering/multi-agent-research-system" target="_blank" rel="noopener noreferrer">one rubric-based judge beat a panel</a>.
+      A field of its own; I'll point rather than cover.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>any others?</h2>
+    <p>
+      Formal proofs are the high end of the machine rung, not a separate form.
+      The one genuinely different thing isn't a verdict at all: whether it works
+      in production, at scale, over time, at what cost.
+    </p>
+    <p>That's not verifying. That's sensing.</p>
+  </section>
 </article>
 
 <style>
