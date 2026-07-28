@@ -28,7 +28,7 @@
       Agents break that. The code still looks right, but no one chose the tests,
       and no one held the context that made authorship a signal.
     </p>
-    <p>So what's the signal now? It's an active area of research.</p>
+    <p>So what's the signal now? It's an active area of work.</p>
   </section>
 
   <section class="section">
