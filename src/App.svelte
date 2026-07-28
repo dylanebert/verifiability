@@ -14,8 +14,8 @@
       want: fast, stable, secure, to your taste.
     </p>
     <p>
-      How well you can check that is a task's verifiability. It bounds what an
-      agent can be trusted to build, and what you still have to do yourself.
+      How well you can check that is a task's verifiability. It varies across
+      tasks, and sets how much you can delegate to an agent.
     </p>
   </section>
 
@@ -91,10 +91,10 @@
     <h2>any others?</h2>
     <p>
       Formal proofs are the high end of the machine rung, not a separate form.
-      The one genuinely different thing isn't a verdict at all: whether it works
-      in production, at scale, over time, at what cost.
+      None of the three tells you whether the code holds up in production: at
+      scale, over time, at what cost. That job is sensing, and it pairs with
+      verifying.
     </p>
-    <p>That's not verifying. That's sensing.</p>
   </section>
 </article>
 
