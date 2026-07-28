@@ -56,7 +56,7 @@
       When the oracle is trustworthy, automation follows. Bun's
       <a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener noreferrer">rewrite from Zig to Rust</a>
       leaned on a language-independent test suite as its oracle: 60,624 tests,
-      "0 skipped or deleted," and Sumner checked by hand that they actually ran.
+      "0 skipped or deleted."
     </p>
     <p>
       <strong>LLM-as-judge.</strong> An agent grades the work: the most flexible
