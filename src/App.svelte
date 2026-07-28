@@ -60,14 +60,11 @@
     </p>
     <p>
       <strong>LLM-as-judge.</strong> An agent grades the work: the most flexible
-      of the three, judging what no test can express. Also the most expensive
-      and non-deterministic, and foolable: a single junk token can trigger a
-      false pass
-      (<a href="https://arxiv.org/abs/2507.08794" target="_blank" rel="noopener noreferrer">One Token to Fool</a>).
-      Bun used it adversarially. A second Claude saw only the diff, told to
-      assume the code was broken, while the implementer never reviewed its own
-      work. Adding judges can raise confidence, at rising cost. A field of its
-      own; I'll point rather than cover.
+      of the three, judging what no test can express. Also the most expensive,
+      non-deterministic, and
+      <a href="https://arxiv.org/abs/2507.08794" target="_blank" rel="noopener noreferrer">foolable in ways still being mapped</a>.
+      It's the largest and fastest-moving type, spanning adversarial review,
+      consensus, and graders. A field of its own; I'll point rather than cover.
     </p>
   </section>
 
