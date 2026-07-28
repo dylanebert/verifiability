@@ -59,13 +59,9 @@
       "0 skipped or deleted."
     </p>
     <p>
-      <strong>LLM-as-judge.</strong> An agent grades another's work. Often it's
-      adversarial review: a fresh agent with no stake in the code, hunting for
-      what's wrong. It judges what no test can express, at a fraction of a
-      human's cost. But it's the least reliable of the three, non-deterministic
-      and
-      <a href="https://arxiv.org/abs/2507.08794" target="_blank" rel="noopener noreferrer">gameable</a>,
-      and the newest, still being actively worked out.
+      <strong>LLM-as-judge.</strong> Agents grade other agents. Adversarial
+      review is one form: a fresh agent, no stake in the code, hunting for
+      what's wrong. It's the newest of the three, and the fastest-changing.
     </p>
   </section>
 
