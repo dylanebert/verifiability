@@ -14,7 +14,7 @@
       code you want: fast, stable, secure, to your taste.
     </p>
     <p>
-      How well you can confirm that is a task's <em>verifiability</em>.
+      How well you can know that is a task's <em>verifiability</em>.
     </p>
   </section>
 
@@ -28,7 +28,7 @@
       Agents break that. The code still looks right, but no one chose the tests,
       and no one held the context that made authorship a signal.
     </p>
-    <p>So what's the signal now? Nobody knows.</p>
+    <p>So what's the signal now? Nothing yet.</p>
   </section>
 
   <section class="section">
