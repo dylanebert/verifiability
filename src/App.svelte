@@ -16,19 +16,11 @@
     <p>
       How well you can know that is a task's <em>verifiability</em>.
     </p>
-  </section>
-
-  <section class="section">
-    <h2>the old signal</h2>
     <p>
-      The old check was implicit: a competent person wrote the code, reviewed
-      the diff, chose the tests. Trust rode on authorship.
+      It used to be implicit: a person wrote the code, reviewed the diff, chose
+      the tests, and trust rode on authorship. Agents break that. What replaces
+      it is an active area of work.
     </p>
-    <p>
-      Agents break that. The code still looks right, but no one chose the tests,
-      and no one held the context that made authorship a signal.
-    </p>
-    <p>So what's the signal now? It's an active area of work.</p>
   </section>
 
   <section class="section">
