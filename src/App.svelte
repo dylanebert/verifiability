@@ -10,13 +10,12 @@
   <section class="section">
     <h2>the crux</h2>
     <p>
-      Generating code is easy now. The hard part is knowing it's the code you
-      want: fast, stable, secure, to your taste.
+      Generating code is easy now. The hard part is knowing whether it's the
+      code you want: fast, stable, secure, to your taste.
     </p>
     <p>
-      How well you can check that is a task's verifiability, and it varies
-      across tasks. The agent writes the code regardless; verifiability sets how
-      much of the checking stays human.
+      How well you can check that is a task's verifiability. When checking is
+      cheap, the loop runs itself. When it isn't, a human stays in it.
     </p>
   </section>
 
