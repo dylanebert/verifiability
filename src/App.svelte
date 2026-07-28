@@ -16,22 +16,18 @@
     <p>
       How well you can know that is a task's <em>verifiability</em>.
     </p>
-    <p>
-      It used to be implicit: a person wrote the code, reviewed the diff, chose
-      the tests, and trust rode on authorship. Agents break that. What replaces
-      it is an active area of work.
-    </p>
   </section>
 
   <section class="section">
     <h2>why now</h2>
     <p>
-      Models got good at code through reinforcement learning: attempt a task,
-      get rewarded when the result is right, repeat.
+      Trust used to ride on authorship: a person wrote the code, reviewed the
+      diff, chose the tests. Agents remove that.
     </p>
     <p>
-      You can only reward what you can check. A task that produces that signal is
-      a verifiable task. Reward and verifiability are the same property.
+      Reinforcement learning is how they got good: attempt a task, get rewarded
+      when the result is right, repeat. You can only reward what you can check,
+      so reward and verifiability are the same property.
     </p>
     <p>
       Code and math led because they grade themselves
@@ -55,34 +51,26 @@
       oracle but the person, so you can't sample it cheaply or in parallel.
     </p>
     <p>
-      <strong>Machine.</strong> Tests, types, proofs. Fast and near-perfect, but
-      only as correct as the assumptions you fed it. When the machine oracle is
-      trustworthy, automation follows. Bun's
+      <strong>Machine.</strong> Tests, typecheckers, static analysis. Fast,
+      cheap, and objective, but only as correct as the assumptions you fed them.
+      When the oracle is trustworthy, automation follows. Bun's
       <a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener noreferrer">rewrite from Zig to Rust</a>
-      rode a language-independent test suite: 60,624 tests, "0 skipped or
-      deleted." One author, reviewers who saw only the diff and were told to
-      assume it was broken, and a hand check that the tests actually ran.
+      leaned on a language-independent test suite as its oracle: 60,624 tests,
+      "0 skipped or deleted," and Sumner checked by hand that they actually ran.
     </p>
     <p>
-      <strong>LLM-as-judge.</strong> An agent grades the work. Cheap, general,
-      the fastest-moving of the three. Also foolable: a single junk token can
-      trigger a false pass
+      <strong>LLM-as-judge.</strong> An agent grades the work: the most flexible
+      of the three, judging what no test can express. Also the most expensive
+      and non-deterministic, and foolable: a single junk token can trigger a
+      false pass
       (<a href="https://arxiv.org/abs/2507.08794" target="_blank" rel="noopener noreferrer">One Token to Fool</a>).
-      And more judges isn't automatically a better verdict. Anthropic found
-      <a href="https://www.anthropic.com/engineering/multi-agent-research-system" target="_blank" rel="noopener noreferrer">one rubric-based judge beat a panel</a>.
-      A field of its own; I'll point rather than cover.
+      Bun used it adversarially. A second Claude saw only the diff, told to
+      assume the code was broken, while the implementer never reviewed its own
+      work. Adding judges can raise confidence, at rising cost. A field of its
+      own; I'll point rather than cover.
     </p>
   </section>
 
-  <section class="section">
-    <h2>any others?</h2>
-    <p>
-      Formal proofs are the high end of the machine rung, not a separate form.
-      None of the three tells you whether the code holds up in production: at
-      scale, over time, at what cost. That job is sensing, and it pairs with
-      verifying.
-    </p>
-  </section>
 </article>
 
 <style>
