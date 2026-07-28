@@ -48,16 +48,12 @@
       Some gains are model-family quirks, not reasoning
       (<a href="https://arxiv.org/abs/2506.10947" target="_blank" rel="noopener noreferrer">Spurious Rewards</a>).
     </p>
-    <p>
-      Same property, both ends: what a model can be trained to do, and what you
-      can trust it to do.
-    </p>
   </section>
 
   <section class="section">
-    <h2>the forms</h2>
+    <h2>types of verifiability</h2>
     <p>
-      So the question is how you verify. Three forms; Anthropic
+      There are three types of verifiability. Anthropic
       <a href="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents" target="_blank" rel="noopener noreferrer">sorts graders</a>
       the same way: code-based, model-based, human.
     </p>
