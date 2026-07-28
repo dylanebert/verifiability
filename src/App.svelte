@@ -14,8 +14,9 @@
       want: fast, stable, secure, to your taste.
     </p>
     <p>
-      How well you can check that is a task's verifiability. It varies across
-      tasks, and sets how much you can delegate to an agent.
+      How well you can check that is a task's verifiability, and it varies
+      across tasks. The agent writes the code regardless; verifiability sets how
+      much of the checking stays human.
     </p>
   </section>
 
