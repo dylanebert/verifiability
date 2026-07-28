@@ -14,8 +14,7 @@
       code you want: fast, stable, secure, to your taste.
     </p>
     <p>
-      How well you can check that is a task's verifiability. When checking is
-      cheap, the loop runs itself. When it isn't, a human stays in it.
+      How well you can check that is a task's verifiability.
     </p>
   </section>
 
