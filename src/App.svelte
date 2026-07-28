@@ -14,7 +14,7 @@
       code you want: fast, stable, secure, to your taste.
     </p>
     <p>
-      How well you can verify that is a task's <em>verifiability</em>.
+      How well you can confirm that is a task's <em>verifiability</em>.
     </p>
   </section>
 
