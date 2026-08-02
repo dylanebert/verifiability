@@ -39,6 +39,29 @@
   </section>
 
   <section class="section">
+    <h2>the gap</h2>
+    <p>
+      Every verifier is a proxy for intent. A test suite checks what you wrote
+      down. What you meant was never fully written down.
+    </p>
+    <p>
+      Optimization pressure widens the gap. A stronger generator finds more of
+      the proxy's slack, so sustained optimization against an imperfect
+      objective produces reward hacking. No fixed reward function stays
+      effective as capability grows
+      (<a href="https://arxiv.org/abs/2606.26300" target="_blank" rel="noopener noreferrer">The Verification Horizon</a>).
+    </p>
+    <p>
+      Verification signal
+      <a href="https://arxiv.org/abs/2606.26300" target="_blank" rel="noopener noreferrer">decomposes</a>
+      into scalability, faithfulness, and robustness. You get two. Unit tests
+      scale and hold up under pressure, and capture little intent. LLM judges
+      scale and track intent, and are gameable. Human review tracks intent and
+      holds up, and does not scale.
+    </p>
+  </section>
+
+  <section class="section">
     <h2>types of verifiability</h2>
     <p>
       There are three types of verifiability. Anthropic
@@ -62,6 +85,69 @@
       <strong>LLM-as-judge.</strong> Agents grade other agents. Adversarial
       review is one form: a fresh agent, no stake in the code, hunting for
       what's wrong. It's the newest of the three, and the fastest-changing.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>the landscape</h2>
+    <p>
+      Test suites are the default proxy, and their failure rate is measured.
+      Across 21 repair tools on Defects4J,
+      <a href="https://shangwenwang.github.io/files/ASE-20.pdf" target="_blank" rel="noopener noreferrer">27.5% of test-passing patches were correct</a>.
+      When independently generated suites labeled patches that 35 professional
+      developers had already judged,
+      <a href="https://xin-xia.github.io/publication/icse192.pdf" target="_blank" rel="noopener noreferrer">agreement was near chance</a>.
+      Passing is evidence at a known and unimpressive rate.
+    </p>
+    <p>
+      Review is the second layer. Human review
+      <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/rigby2013convergent.pdf" target="_blank" rel="noopener noreferrer">saturates at two reviewers</a>,
+      and
+      <a href="https://sback.it/publications/icse2018seip.pdf" target="_blank" rel="noopener noreferrer">Google's median is one</a>.
+      For agent reviewers the published data
+      <a href="https://claude.com/blog/code-review" target="_blank" rel="noopener noreferrer">scales yield by the size of the diff</a>,
+      not by the number of reviewers.
+    </p>
+    <p>
+      The practice tradition is the third layer. SOLID, data-oriented design,
+      and test-driven development are bodies of technique for making code
+      checkable before it is written, each with its own applicability
+      conditions. Where the effect has been measured it is small. TDD's effect
+      on external quality
+      <a href="https://ieeexplore.ieee.org/document/6427618" target="_blank" rel="noopener noreferrer">standardizes to about zero</a>
+      across 12 experiments and 743 subjects.
+    </p>
+    <p>
+      Agents changed what can be measured about that tradition. A practice can
+      be assigned, enforced, and logged across thousands of runs, so methodology
+      becomes an experimental variable at a scale human subjects never allowed.
+      A cluster of 2026 papers crosses
+      <a href="https://arxiv.org/abs/2605.27922" target="_blank" rel="noopener noreferrer">harness</a>
+      and
+      <a href="https://arxiv.org/html/2607.10569" target="_blank" rel="noopener noreferrer">tool surface</a>
+      against model family, and the recurring result is that a practice moves
+      cost and token count while correctness stays statistically unchanged.
+    </p>
+    <p>
+      That research reports pass rate on benchmark tasks at unmatched cost.
+      Practitioners choose between workflows under a budget. Those are different
+      questions.
+    </p>
+    <p>
+      The bill is human samples times cost per sample, and proxy quality sets
+      the rate. A conformance suite is a near-perfect proxy, so a person
+      samples once and the rest amortizes. Tests plus a written spec are a
+      decent proxy, so sampling at pull-request boundaries holds. Where no proxy
+      exists, every iteration is sampled.
+    </p>
+    <p>
+      Two levers follow. Improve the proxy to cut the number of samples. Shorten
+      the loop to cut the cost of each one.
+    </p>
+    <p>
+      Taste has no proxy but the person who holds it, so the sample rate cannot
+      fall. Practice has codified coupling, cohesion, and test design. It has
+      not codified taste.
     </p>
   </section>
 
